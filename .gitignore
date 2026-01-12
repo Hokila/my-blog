@@ -1,0 +1,27 @@
+# Hugo 建置輸出
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# 編輯器和 IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 作業系統
+Thumbs.db
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 臨時檔案
+*.tmp
+*.bak
+*.log

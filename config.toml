@@ -1,0 +1,56 @@
+baseURL = 'http://example.org/'
+languageCode = 'zh-tw'
+title = '我的個人 Blog'
+theme = 'mainroad'
+
+[Params]
+  description = "我的個人部落格" # Site description
+  copyright = "我的個人 Blog" # Footer copyright holder
+  opengraph = true # Enable OpenGraph
+  schema = true # Enable Schema
+  twitter_cards = true # Enable Twitter Cards
+  readmore = true # Show "Read more" button in list
+  authorbox = true # Show authorbox at bottom of pages
+  toc = true # Enable Table of Contents
+  pager = true # Show pager navigation (prev/next links)
+  post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
+  mainSections = ["post", "blog", "news"] # Specify section pages to show on home page
+
+# 作者資訊
+[Author]
+  name = "Hokila"
+  bio = "技術愛好者 | 開源貢獻者 | 持續學習中"
+  avatar = ""
+  github = "Hokila"
+
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "right"  # Configure layout for list pages
+  single = "right" # Configure layout for single pages
+  widgets = ["search", "recent", "categories", "taglist", "social"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget
+
+[Params.widgets.social]
+  # Enable parts of social widget
+  github = "Hokila"
+  twitter = ""
+  linkedin = ""
+  email = ""
+
+# Giscus 評論系統配置
+[Params.giscus]
+  enable = true  # 啟用 Giscus 評論系統
+  repo = "Hokila/blog_comment"  # 您的 GitHub repository (格式: username/repo)
+  repoId = "R_kgDOQ4JV2Q"  # Repository ID (從 GitHub GraphQL API 取得)
+  category = "Announcements"  # Discussion category (建議使用 "Announcements")
+  categoryId = "DIC_kwDOQ4JV2c4C02n5"  # Category ID (Announcements)
+  mapping = "pathname"  # 頁面與 discussion 的對應方式
+  strict = "0"  # 使用嚴格標題匹配
+  reactionsEnabled = "1"  # 啟用反應功能
+  emitMetadata = "0"  # 發送 metadata
+  inputPosition = "bottom"  # 評論輸入框位置 (top/bottom)
+  theme = "preferred_color_scheme"  # 主題 (light/dark/preferred_color_scheme)
+  lang = "zh-TW"  # 語言
